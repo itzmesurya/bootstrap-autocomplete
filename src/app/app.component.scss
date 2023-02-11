@@ -1,0 +1,30 @@
+$width : 600px;
+.toggle-btn>span {
+    width: 300px;
+}
+
+button.btn[ngbDropdownToggle] {
+    background-color: #ffffff;
+    border-color    : rgb(73, 73, 73);
+    color           : darkslategrey;
+    text-align      : left;
+    border-radius: 0%;
+}
+
+button.btn[ngbDropdownToggle]::after {
+    right   : 10px;
+    top     : 15px;
+    position: absolute;
+}
+
+button.btn[ngbDropdownToggle],
+[ngbdropdownmenu] {
+    width: $width;
+    border-radius: 0%;
+    
+}
+
+.search-text-box {
+    width: $width - 15;
+    margin: 5px;
+}
