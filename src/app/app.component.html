@@ -15,9 +15,8 @@
 				<span>No item selected</span>
 			</button>
 			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-				<div><input class="search-text-box" type="text" name="" id=""></div>
-				<button ngbDropdownItem>Another Action</button>
-				<button ngbDropdownItem>Something else is here</button>
+				<div><input class="search-textbox" [(ngModel)]="filterText" type="text" name="" id=""></div>
+				<button ngbDropdownItem *ngFor="let item of items | filter:filterText">{{item}}</button>
 			</div>
 		</div>
 	</div>
